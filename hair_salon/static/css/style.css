@@ -9,15 +9,12 @@ body {
     
 }
 
-
-
 .background-img {
-    width: 100%;
+    width: 500px;
     max-height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
-    
 }
 
 .bg-dark {
@@ -56,4 +53,36 @@ body {
     display: inline;
 }
 
+/* Photo Gallery */
+.container .main-img img {
+    width: 100%;
+    border: red solid 3px;
+    background: #fff;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    width: 100%;
+}
+
+.imgs > img {
+    width: 100%;
+    background-size: cover;
+    max-height: 250px;
+    border: red solid 3px;
+}
+
+/* Fade in imgs */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
 
