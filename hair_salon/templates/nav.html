@@ -1,6 +1,9 @@
+{% load static %}
 <!-- Navegation menu -->
-<nav class="navbar navbar-expand-lg fixed-top bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">LOGO</a>
+<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'img/logo.png' %}" alt="Caly Hair logo">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,16 +14,16 @@
                 <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link slide-section" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link slide-section" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link slide-section" href="#services">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link slide-section" href="#contact">Contact</a>
             </li>
         </ul>
     </div>

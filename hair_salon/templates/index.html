@@ -6,260 +6,417 @@ Caly Hair Styling
 
 {% block content %}
 <!-- Background cover -->
-<!-- <div class="container-fluid">
-    <img class="background-img" src="{% static 'img/cover.jpeg' %}" alt="background image">
-</div> -->
-<div class="holding-text">
-    <div class="row">
-        <div class="col-12">
-            <div class="caly-style">
-                <p class="">Caly Hair</p>
-                <span>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <p class="styling">Styling</p>
-                    <i class="fa fa-star fa-x" aria-hidden="true"></i>
-                </span>
+<section>
+    <div class="background-cover">
+        <img class="" src="{% static 'img/bg-img.jpg' %}" alt="background image imgs">
+    </div> 
+</section>
+
+<div class="container">
+
+    <div class="holding-text">
+        <div class="row">
+            <div class="col-12">
+                <div class="caly-style">
+                    <p class="animate__animated animate__bounce">Caly Hair</p>
+                    <span>
+                        <i class="fa fa-star animate__animated animate__flip" aria-hidden="true"></i>
+                        <p class="styling animate__bounce">Styling</p>
+                        <i class="fa fa-star fa-x animate__animated animate__flip" aria-hidden="true"></i>
+                    </span>
+                </div>
             </div>
         </div>
+    </div>
+    <!-- Section About -->
+    <section id="about" class="introduction mt-5">
+        <h1>Welcome to</h1>
+        <p class="lead">Caly Hair Styling</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere consectetur perferendis voluptatum a
+            minima repudiandae deserunt provident distinctio. Adipisci, illo fugit.
+        </p>
+        <hr>
+        <div class="toggle">
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Read More
+            </button>
+            <div class="profile-background mt-5">
+                <div class="collapse" id="collapseExample">
+                    <div class="row">
+                        <div class="col-md-6 animate__animated animate__fadeInLeft">
+                            <img src="{% static 'img/alina-profile.jpeg' %}" class="profile-img" alt="">
+                        </div>
+
+                        <div class="col-md-6 animate__animated animate__fadeInRight">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto, rerum dolore
+                                dolorem
+                                aliquid voluptate numquam? Unde aperiam maiores quisquam numquam cum nesciunt, ea aut ex
+                                sunt
+                                quaerat minus similique ad commodi voluptates soluta voluptas modi aliquid, impedit rem fuga
+                                perspiciatis iure. Voluptatem voluptate adipisci architecto sed fugiat, blanditiis aperiam.
+                                Quos
+                                quidem similique dignissimos eveniet consequuntur, esse veritatis harum fugiat
+                                necessitatibus
+                                velit ducimus expedita, maiores optio? Doloribus quasi debitis, atque, ea neque molestiae
+                                veritatis praesentium odit provident soluta iure! Quod ut officiis nobis temporibus culpa
+                                repellat aliquid sunt ea, totam repellendus eius odio architecto nam, cum reiciendis minus
+                                nemo
+                                perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Section Gallery -->
+    <section id="gallery" class="gallery mt-5">
+        <h2>Photo Gallery</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda eveniet voluptatibus soluta
+            consectetur unde, blanditiis mollitia? Voluptatibus, facilis magni.
+        </p>
+        <div class="wrapper">
+            <div class="gallery-container w-3">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="{% static 'img/gallery/img-20.jpeg' %}" class="item" id="current">
+                    </div>
+                    <div class="text">text-1</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-21.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-2</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-22.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-3</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-26.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-4</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-27.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-5</div>
+                </div>
+            </div>
+
+            <!-- Main picture -->
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-33.jpeg' %}" class="main-pic">
+                    </div>
+                    <div class="text">main picture</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-33.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-6</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-32.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-7</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-26.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-8</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-27.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-9</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-22.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-10</div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-19.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-11</div>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image imgs">
+                        <img src="{% static 'img/gallery/img-19.jpeg' %}" class="item">
+                    </div>
+                    <div class="text">text-11</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Section Testimonials -->
+    <section class="testimonials mt-5">
+        <h3>What People Say?</h3>
+        <span class="reviews">Carly Experiences</span>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="jumbotron">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
+                        <div class="chip">
+                            <img src="{% static 'img/alina-profile.jpeg' %}" alt="Person" width="96" height="96">John Doe
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
+                        <div class="chip">
+                            <img src="{% static 'img/alina-profile.jpeg' %}" alt="Person" width="96" height="96">John Doe
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, atque.</p>
+                        <div class="chip">
+                            <img src="{% static 'img/alina-profile.jpeg' %}" alt="Person" width="96" height="96">John Doe
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
+                        <div class="chip">
+                            <img src="{% static 'img/alina-profile.jpeg' %}" alt="Person" width="96" height="96">John Doe
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section Services -->
+    <section id="services" class="price-list mt-5">
+        <h4>Price List</h4>
+        <Accordion price list>
+            <div class="accordion mt-5" id="accordionExample">
+                <!-- <Collapse One -->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-arrow-circle-down"
+                                    aria-hidden="true"></i>
+                                Styling
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for st in styling %}
+                            <p>{{ st.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ st.price }}</p>
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Two -->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cutting
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for cut in cutting %}
+                            <p>{{ cut.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ cut.price }}</p>
+
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Three -->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Colour
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for cl in colour %}
+                            <p>{{ cl.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ cl.price }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Four -->
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Highlights
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for hl in highlights %}
+                            <p>{{ hl.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ hl.price }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Five -->
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Toners
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for tn in toners %}
+                            <p>{{ tn.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ tn.price }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Six  -->
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
+                                aria-expanded="true" aria-controls="collapseSix">
+                                Treatments
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for tm in treatment %}
+                            <p>{{ tm.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ tm.price }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Collapse Seven -->
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Extensions
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            {% for st in extension %}
+                            <p>{{ st.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ st.price }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Accordion price list -->
+    </section>
+    <div id="contact" class="mt-5">
+
     </div>
 </div>
-<!-- Section Introduction -->
-<section class="introduction">
-    <h1>Welcome to Caly Hair Stlying</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facere consectetur perferendis voluptatum a
-        minima repudiandae deserunt provident distinctio. Adipisci, illo fugit.
-    </p>
-    <hr>
-    <div class="toggle">
-        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            Read More
-        </button>
-        <div class="collapse" id="collapseExample">
-            <div class="row">
-                <!-- <div class="card-img-top"> -->
-                <div class="col-md-6">
-                    <img src="{% static 'img/alina-profile.jpeg' %}" alt="">
-                </div>
-
-                <!-- </div> -->
-
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto, rerum dolore dolorem
-                        aliquid voluptate numquam? Unde aperiam maiores quisquam numquam cum nesciunt, ea aut ex sunt
-                        quaerat minus similique ad commodi voluptates soluta voluptas modi aliquid, impedit rem fuga
-                        perspiciatis iure. Voluptatem voluptate adipisci architecto sed fugiat, blanditiis aperiam. Quos
-                        quidem similique dignissimos eveniet consequuntur, esse veritatis harum fugiat necessitatibus
-                        velit ducimus expedita, maiores optio? Doloribus quasi debitis, atque, ea neque molestiae
-                        veritatis praesentium odit provident soluta iure! Quod ut officiis nobis temporibus culpa
-                        repellat aliquid sunt ea, totam repellendus eius odio architecto nam, cum reiciendis minus nemo
-                        perferendis.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-</section>
-<!-- Section Gallery -->
-<section class="gallery">
-    <h2>Photo Gallery</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda eveniet voluptatibus soluta
-        consectetur unde, blanditiis mollitia? Voluptatibus, facilis magni.
-    </p>
-    <div class="container">
-        <div class="main-img">
-            <img src="{% static 'img/gallery/img-32.jpeg' %}" alt="main hair styling" id="current">
-        </div>
-        <div class="imgs">
-            <img src="{% static 'img/gallery/img-32.jpeg' %}">
-            <img src="{% static 'img/gallery/img-33.jpeg' %}">
-            <img src="{% static 'img/gallery/img-28.jpeg' %}">
-            <img src="{% static 'img/gallery/img-29.jpeg' %}">
-            <img src="{% static 'img/gallery/img-19.jpeg' %}">
-            <img src="{% static 'img/gallery/img-20.jpeg' %}">
-            <img src="{% static 'img/gallery/img-26.jpeg' %}">
-            <img src="{% static 'img/gallery/img-27.jpeg' %}">
-            <img src="{% static 'img/gallery/img-22.jpeg' %}">
-            <img src="{% static 'img/gallery/img-21.jpeg' %}">
-        </div>
-    </div>
-</section>
-<!-- Section Testimonials -->
-<section class="reviews">
-    <h3>Testimonials</h3>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="jumbotron">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
-                </div>
-                <div class="carousel-item">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
-                </div>
-                <div class="carousel-item">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
-                </div>
-                <div class="carousel-item">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis!</p>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
-<!-- Section Services -->
-<section id="services" class="price-list">
-    <h4>Price List</h4>
-    <!-- Accordion price list -->
-    <div class="accordion" id="accordionExample">
-        <!-- Collapse One -->
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-arrow-circle-down"
-                            aria-hidden="true"></i>
-                        Styling
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for st in styling %}
-                    <p>{{ st.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ st.price }}</p>
-
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Two -->
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Cutting
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for cut in cutting %}
-                    <p>{{ cut.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ cut.price }}</p>
-
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Three -->
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Colour
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for cl in colour %}
-                    <p>{{ cl.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ cl.price }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Four -->
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="true" aria-controls="collapseFour">
-                        Highlights
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for hl in highlights %}
-                    <p>{{ hl.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ hl.price }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Five -->
-        <div class="card">
-            <div class="card-header" id="headingFive">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="true" aria-controls="collapseFive">
-                        Toners
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for tn in toners %}
-                    <p>{{ tn.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ tn.price }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Six -->
-        <div class="card">
-            <div class="card-header" id="headingSix">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
-                        aria-expanded="true" aria-controls="collapseSix">
-                        Treatments
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for tm in treatment %}
-                    <p>{{ tm.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ tm.price }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Collapse Seven -->
-        <div class="card">
-            <div class="card-header" id="headingSeven">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven"
-                        aria-expanded="true" aria-controls="collapseSeven">
-                        Extensions
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                <div class="card-body">
-                    {% for st in extension %}
-                    <p>{{ st.name }} <i class="fa fa-gbp mr-1" aria-hidden="true"></i>{{ st.price }}</p>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Accordion price list -->
-</section>
-
-
 {% endblock %}
