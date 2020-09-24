@@ -11,18 +11,16 @@ Caly Hair Styling
         <img class="" src="{% static 'img/bg-img.jpg' %}" alt="background image imgs">
     </div> 
 </section>
-
 <div class="container-fuid text-center">
-
-    <div class="background-cover-text">
+    <div class="background-cover-text animate__animated animate__fadeOut">
         <div class="row">
             <div class="col-12">
                 <div class="caly-style">
                     <p class="animate__animated animate__bounce">Caly Hair</p>
                     <span>
-                        <i class="fa fa-star animate__animated animate__flip" aria-hidden="true"></i>
-                        <p class="styling animate__bounce">Styling</p>
-                        <i class="fa fa-star fa-x animate__animated animate__flip" aria-hidden="true"></i>
+                        <i class="fa fa-star animate__animated animate__backInDown" aria-hidden="true"></i>
+                        <p class="styling  animate__animated animate__backInDown">Styling</p>
+                        <i class="fa fa-star fa-x animate__animated animate__backInDown" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
@@ -74,7 +72,7 @@ Caly Hair Styling
     <!-- Section Gallery -->
     <div class="parallax-1"></div>
     <div class="container">
-        <section id="gallery" class="gallery mt-5">
+        <section id="gallery" class="gallery">
             <h2>Photo Gallery</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur assumenda eveniet voluptatibus soluta
                 consectetur unde, blanditiis mollitia? Voluptatibus, facilis magni.
@@ -201,11 +199,10 @@ Caly Hair Styling
     </div>  
     <!-- Section Testimonials -->
     <div class="container">
-        <section class="testimonials mt-5">
-            
+        <div class="testimonials">
             <h3>What People Say?</h3>
             <span class="reviews">Carly Experiences</span>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -277,24 +274,23 @@ Caly Hair Styling
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
     <!-- Section Services -->
     <!-- Parallas img 2 -->
     <div class="parallax-2"></div>
     <div class="container">
-        <section id="services" class="price-list mt-5">
+        <section id="services" class="price-list">
             <h4>Price List</h4>
             <Accordion price list>
-                <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion mt-3" id="accordionExample">
                     <!-- <Collapse One -->
-                    <div class="card">
+                    <div class="card first-row">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-arrow-circle-down"
-                                        aria-hidden="true"></i>
-                                    Styling
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Styling<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -308,12 +304,12 @@ Caly Hair Styling
                         </div>
                     </div>
                     <!-- Collapse Two -->
-                    <div class="card">
+                    <div class="card first-row">
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Cutting
+                                    Cutting<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -327,12 +323,12 @@ Caly Hair Styling
                         </div>
                     </div>
                     <!-- Collapse Three -->
-                    <div class="card">
+                    <div class="card first-row">
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Colour
+                                    Colour<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -346,12 +342,12 @@ Caly Hair Styling
                         </div>
                     </div>
                     <!-- Collapse Four -->
-                    <div class="card">
+                    <div class="card secound-row">
                         <div class="card-header" id="headingFour">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Highlights
+                                    Highlights<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -365,12 +361,12 @@ Caly Hair Styling
                         </div>
                     </div>
                     <!-- Collapse Five -->
-                    <div class="card">
+                    <div class="card secound-row">
                         <div class="card-header" id="headingFive">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                    Toners
+                                    Toners<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -384,12 +380,12 @@ Caly Hair Styling
                         </div>
                     </div>
                     <!-- Collapse Six  -->
-                    <div class="card">
+                    <div class="card secound-row">
                         <div class="card-header" id="headingSix">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
                                     aria-expanded="true" aria-controls="collapseSix">
-                                    Treatments
+                                    Treatments<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
                                 </button>
                             </h2>
                         </div>
@@ -406,9 +402,10 @@ Caly Hair Styling
                         <div class="card-header" id="headingSeven">
                             <h2 class="mb-0">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                    Extensions
-                                </button>
+                                    data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Extensions<i class="fa fa-arrow-circle-down"
+                                    aria-hidden="true"></i></button>
+                                    
+                                
                             </h2>
                         </div>
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
