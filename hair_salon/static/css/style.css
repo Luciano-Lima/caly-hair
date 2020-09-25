@@ -33,7 +33,6 @@
 
 /* Background img */
 .background-cover img {
-    background-position: center;
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -67,7 +66,7 @@
 }
 
 .profile-img {
-    height: 350px;
+    height: 380px;
     border-radius: 50px;
 }
 
@@ -86,13 +85,13 @@
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
-    opacity: 0.6;
+    opacity: 0.4;
     position: relative;
 }
 
 /* Testimonials */
 .jumbotron {
-    background-color: #bed0ab99;
+    background-color: rgb(179 197 160 / 21%);
 }
 
 
@@ -121,14 +120,14 @@ section {
 }
 
 .testimonials {
-    padding: 70px 0px;
+    margin-top: -70px;
 }
+
 
 /* Photo Gallery */
 .wrapper {
     display: inline-grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 180px;
     grid-gap: 10px;
 }
 
@@ -254,15 +253,37 @@ section {
     display: block;
 }
 
-/* .first-row {
-    display: grid;
-    grid-template-columns: 7fr;
-    object-fit: cover; */
-    /* grid-auto-rows: 180px; */
-    /* grid-gap: 10px; */
+.card {
+    border: 0;
+}
 
+.card-header {
+    background-color: rgb(236 236 237 / 32%); 
+}
 
-/* .secound-row {
-    display: grid;
-    grid-template-columns: 1fr; 
+.card-body {
+    background-color: rgb(179 197 160 / 21%);
+    border-radius: 45px;
+    margin-bottom: 10px;
+}
+
+.accordion>.card>.card-header {
+    border-radius: 71px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width:768px) {
+    .collapse p {
+        padding-top: 1rem;
+        
+    }
+}
+
+/* @media (min-width:1200px) {
+    .parallax-1 {
+        top: -250px;
+        
+    }
 } */
+
