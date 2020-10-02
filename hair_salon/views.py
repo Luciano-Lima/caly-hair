@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from .models import Cutting, Styling, Colour, Highlights, Toners, Treatment, Extension
-from .forms import contactForm
+
 # Create your views here.
 def home(request):
     cutting = Cutting.objects.all().order_by('name')
@@ -18,7 +18,5 @@ def home(request):
         })
     
     
-def contact(request):
-    form = contactForm
-    return render(request, 'contact.html', {'form': form})  
+ 
 
