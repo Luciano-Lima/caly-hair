@@ -298,13 +298,20 @@ section {
 @media (max-width:768px) {
     .collapse p {
         padding-top: 1rem;
-        
     }
+    /* styling {
+        display: inline;
+        font-size: 33px;
+    } */
+    
 }
 
-/* @media (min-width:1200px) {
-    .parallax-1 {
-        top: -250px;
-        
-    }
-} */
+@media (max-width:576px) {
+    /* .caly-hair-text {
+        font-size: 33px;
+    } */
+    .w-3 {
+       grid-column: span 6;
+}
+}
+
