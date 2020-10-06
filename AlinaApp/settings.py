@@ -32,7 +32,10 @@ SECRET_KEY = 'o8741+jdl@gy^()ha-z!y-hdr$2^sn19%eq)7^i&&tr6vz*j4)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['caly-hair.herokuapp.com']
+ALLOWED_HOSTS = ['caly-hair.herokuapp.com',
+                '127.0.0.1',
+
+    ]
 
 
 # Application definition
@@ -58,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'AlinaApp.urls'
