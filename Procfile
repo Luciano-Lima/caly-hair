@@ -1,1 +1,1 @@
-web: gunicorn alinawebsite.wsgi
+web: gunicorn alinaApp.wsgi
