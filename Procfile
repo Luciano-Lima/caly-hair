@@ -1,1 +1,1 @@
-web: gunicorn alinaApp.wsgi
+web: gunicorn caly-hair.wsgi
