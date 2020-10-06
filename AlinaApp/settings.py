@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATICFILES_LOCATION = 'static'
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_STORAGE = 'static'
 MEDIAFILES_LOCATION = 'img'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
