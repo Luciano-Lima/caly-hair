@@ -15,7 +15,7 @@ from pathlib import Path
 from os import path
 
 
-if path.exists("env.py"):
+if path.exists('env.py'):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
