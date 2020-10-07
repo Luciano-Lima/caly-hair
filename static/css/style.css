@@ -6,6 +6,7 @@
     line-height: 2.2rem;
     /* background-color: rgb(168 57 69 / 17%); */
     color: #243238;  
+    font-size: 1.1em;
 }
 
 .footer-copyright {
@@ -26,6 +27,14 @@
     font-family: fantasy, cursive;
     font-weight: 900;
     font-size: 1.1rem;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .bg-dark {
@@ -299,19 +308,10 @@ section {
     .collapse p {
         padding-top: 1rem;
     }
-    /* styling {
-        display: inline;
-        font-size: 33px;
-    } */
-    
 }
 
 @media (max-width:576px) {
-    /* .caly-hair-text {
-        font-size: 33px;
-    } */
     .w-3 {
        grid-column: span 6;
 }
 }
-
