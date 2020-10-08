@@ -294,7 +294,10 @@ section {
         letter-spacing: 0.1em;
         font-family: inherit;
     }
-    
+    .gallery-item .text {
+        display: none;
+    }
+
 }
 
 @media (min-width:769px) {
