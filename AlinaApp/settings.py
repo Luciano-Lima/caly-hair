@@ -11,12 +11,14 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+
 from pathlib import Path
 from os import path
 
-
 if path.exists('env.py'):
     import env
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -28,10 +30,11 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
+print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
-DEBUB = False
+DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
+# DEBUB = False
 
 ALLOWED_HOSTS = ['caly-hair.herokuapp.com',
                 '127.0.0.1',
@@ -138,7 +141,7 @@ AWS_STORAGE_BUCKET_NAME = 'calyhair'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
+                            
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
