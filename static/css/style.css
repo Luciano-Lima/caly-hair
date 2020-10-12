@@ -1,17 +1,19 @@
 /* Main style */
-  * body,html {
+* body,
+html {
     height: 100%;
     margin: 0;
     font-family: fantasy, cursive;
     line-height: 2.2rem;
     /* background-color: rgb(168 57 69 / 17%); */
-    color: #243238;  
+    color: #243238;
     font-size: 1.1em;
 }
 
 .footer-copyright {
     background-color: #a1ba856e;
 }
+
 /* Navegation */
 .navbar-brand {
     padding: 0;
@@ -42,7 +44,7 @@
 }
 
 .bg-light {
-    background-color: #8bc34a5e!important;
+    background-color: #8bc34a5e !important;
 }
 
 /* Background img */
@@ -51,7 +53,7 @@
     height: 100vh;
     object-fit: cover;
     background-repeat: no-repeat;
-     background-position: 50% 50%;
+    background-position: 50% 50%;
 }
 
 .background-cover-text {
@@ -63,7 +65,7 @@
     font-weight: 400;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #ffffff; 
+    color: #ffffff;
     font-family: fantasy, cursive;
 }
 
@@ -84,23 +86,38 @@
     border-radius: 50px;
 }
 
-.parallax-1 { 
+.parallax-1 {
     background-image: url('/static/img/bg-img-2.jpg');
     min-height: 300px;
 }
 
-.parallax-2 { 
+.parallax-2 {
     background-image: url('/static/img/bg-img-3.jpg');
     height: 300px;
 }
 
 /* Parallax */
-.parallax-1, .parallax-2 {
+/* .parallax-1, .parallax-2 {
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
     opacity: 0.4;
     position: relative;
+} */
+
+.parallax-1,
+.parallax-2 {
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    /* top: 0px; */
+    /* bottom: 0px;
+    left: 0px;
+    right: 0px; */
+    z-index: -1;
+    opacity: 0.4;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 /* Testimonials */
@@ -114,7 +131,7 @@ section {
     padding: 70px 0px;
 }
 
-.contact{
+.contact {
     padding: 100px 0px;
 }
 
@@ -204,7 +221,7 @@ section {
 
 /* Price List */
 .btn-link {
-    color: #243238;  
+    color: #243238;
 }
 
 .btn-link:hover {
@@ -212,7 +229,8 @@ section {
     text-decoration: underline;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: none;
 }
@@ -229,13 +247,14 @@ section {
     border-color: #8aaa68;
 }
 
-.btn-info.focus, .btn-info:focus {
+.btn-info.focus,
+.btn-info:focus {
     background-color: #8aaa68;
     border-color: #8aaa68;
 }
 
-.btn-info:not(:disabled):not(.disabled).active, 
-.btn-info:not(:disabled):not(.disabled):active, 
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active,
 .show>.btn-info.dropdown-toggle {
     color: #fff;
     background-color: #8aaa68;
@@ -243,8 +262,8 @@ section {
 }
 
 .btn-info:not(:disabled):not(.disabled).active:focus,
- .btn-info:not(:disabled):not(.disabled):active:focus,
-  .show>.btn-info.dropdown-toggle:focus {
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.show>.btn-info.dropdown-toggle:focus {
     box-shadow: none;
 }
 
@@ -266,7 +285,7 @@ section {
 }
 
 .card-header {
-    background-color: rgb(236 236 237 / 32%); 
+    background-color: rgb(236 236 237 / 32%);
 }
 
 .card-body {
@@ -289,11 +308,13 @@ section {
     .collapse p {
         padding-top: 1rem;
     }
+
     .background-cover-text {
         font-size: 1.2em;
         letter-spacing: 0.1em;
         font-family: inherit;
     }
+
     .gallery-item .text {
         display: none;
     }
@@ -310,8 +331,7 @@ section {
 
 @media (max-width:576px) {
     .w-3 {
-       grid-column: span 6;
+        grid-column: span 6;
     }
 
 }
-

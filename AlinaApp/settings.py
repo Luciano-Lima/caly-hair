@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
-print(SECRET_KEY)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
@@ -38,8 +38,10 @@ DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['caly-hair.herokuapp.com',
                 '127.0.0.1',
+                'calyhair.com',
+                'www.calyhair.com',
 
-    ]
+]
 
 
 # Application definition
