@@ -33,8 +33,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
-# DEBUB = False
+# DEBUG = (os.environ.get('DEBUB_VALUE') == 'True')
+DEBUB = False
 
 ALLOWED_HOSTS = ['caly-hair.herokuapp.com',
                 '127.0.0.1',
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'hair_salon',
     'crispy_forms',
     'storages',
+    
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -68,7 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'AlinaApp.urls'
@@ -139,10 +140,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-AWS_STORAGE_BUCKET_NAME = 'calyhair'
+AWS_STORAGE_BUCKET_NAME = os.environ.get ('AWS_STORAGE_BUCKET_NAME')
+
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+#To allow django-admin collectstatic to automatically put files in the bucket
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
                             
 
 
